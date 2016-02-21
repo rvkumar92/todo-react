@@ -1,0 +1,23 @@
+html,body,#container,note{
+    height: 100%;
+}
+body{
+    background-color: brown;
+    margin: 0;
+    padding: 0;
+}
+.note{
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    position: relative;
+}
+div.note:hover > span{
+    opacity: 1;
+}
+span{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+}
