@@ -1,8 +1,7 @@
-html,body,#container,note{
+html,body,#container,.note,.board{
     height: 100%;
 }
 body{
-    background-color: brown;
     margin: 0;
     padding: 0;
 }
@@ -20,4 +19,11 @@ span{
     bottom: 2px;
     right: 2px;
     opacity: 0;
+}
+.glyphicon-plus{
+    right: 2px;
+    position: fixed;
+}
+.board{
+    background-color: brown;
 }
