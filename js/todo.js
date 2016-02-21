@@ -9,6 +9,8 @@ var Todo = React.createClass({
         this.props.onRemove(this.props.index)
     },
     saveNote(){
+        console.log(this.refs.noteValue.value);
+        this.props.onChange(this.refs.noteValue.value,this.props.index);
         this.setState({editing: false})
     },
     renderDisplay(){
@@ -44,10 +46,9 @@ var Board = React.createClass({
         this.setState({notes: noteArray})
     },
     updateNote(note,index){
-        console.log("remove");
-        var arrayNote = this.state.notes;
-        noteArray[i] = note;
-        this.setState({notes: noteArray[i]})
+        var noteArray = this.state.notes;
+        noteArray[index] = note;
+        this.setState({notes: noteArray})
     },
     removeNote(index){
         var noteArray = this.state.notes;

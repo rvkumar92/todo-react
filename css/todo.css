@@ -1,5 +1,6 @@
-html,body,#container,.note,.board{
+html,body,#container,.board{
     height: 100%;
+    overflow: auto;
 }
 body{
     margin: 0;
@@ -9,6 +10,7 @@ body{
     height: 200px;
     width: 200px;
     background: yellow;
+    margin: 5px 0 5px 5px;
     position: relative;
 }
 div.note:hover > span{
@@ -25,5 +27,6 @@ span{
     position: fixed;
 }
 .board{
+    width:100%;
     background-color: brown;
 }
